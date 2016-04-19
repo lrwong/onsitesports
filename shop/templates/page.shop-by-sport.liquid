@@ -1,0 +1,18 @@
+<h1 class="small--text-center">{{ page.title }}</h1>
+<div id='product-collection' class="grid grid--no-gutters grid--uniform">
+  {% for collection in collections %}
+    <div class="grid__item small--one-half medium-up--one-fifth text-center">
+      <a href="{{ collection.url }}?hide=true" class='product-card'>
+        <div class="product-card__image-wrapper">
+          <img src={{ collection | img_url: 'large' }} class='product-card__image'>
+        </div>
+        <div class='product-card__info'>
+          <div class='product-card__name'>{{ collection.title }}</div>
+        </div>
+        <div class='product-card__overlay'>
+          <span class='btn product-card__overlay-btn'>View</span>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

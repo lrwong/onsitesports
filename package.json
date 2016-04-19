@@ -11,5 +11,8 @@
     "grunt-contrib-watch": "~0.4.4",
     "grunt-shopify": "^0.3.0",
     "grunt-shopify-theme": "^0.1.4"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0"
   }
 }

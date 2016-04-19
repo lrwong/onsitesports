@@ -3,10 +3,10 @@ module.exports = function(grunt) {
   dotenv.load();
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shopify');
+  var apiKey = process.env.SHOPIFY_API;
+  var pass = process.env.SHOPIFY_KEY;
  
   grunt.initConfig({
-    var apiKey = process.env.SHOPIFY_API;
-    var pass = process.env.SHOPIFY_KEY;
     // env : {
     //   options : {
     //     //Shared Options Hash

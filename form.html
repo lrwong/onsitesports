@@ -1,0 +1,106 @@
+<DOCTYPE! HTML>
+
+<html>
+<head>
+	<style>
+		body{
+			font-family: "helvetica";	
+		}
+		.l{
+			position:relative;
+			float: left;
+			padding: 0px;
+			margin: 5px;
+			width: 49%;
+		}
+		.r{
+			position: relative;
+			float: left;
+			padding: 0px;
+			margin: 5px;
+			width: 49%;
+		}
+		.tit{
+			padding:0px;
+			margin:0px;
+			margin-bottom: 5px;
+			margin-top: 10px;
+			font-size: 10pt;
+		}
+		.infoInput{
+			width: 85%;
+			height: 35px;
+		}
+		.numInput{
+			height: 35px;
+			width: 45px;
+		}
+		#date{
+			width: 200px;
+			height: 35px;
+		}
+		#cInfo{
+			position: relative;
+			float: left;
+			clear: both;
+			padding: 0px;
+			margin-top: 75px;
+			width: 50%;
+			margin-left: 25%;
+		}
+		.r > div, .l > div{
+			height: 35px;
+		}
+		.info{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#book{
+			height: 40px;
+			width: 100px;
+			font-size: 12pt;
+			font-family: 'helvetica';
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form>
+			<div id='info'>
+				<div id='l' class='l'>
+					<p class='tit'>EVENT NAME:</p>
+					<div><input type='text' class='infoInput' name='eName'></div>
+					<p class='tit'>LOCATION:</p>
+					<div><input type='text' name='location' class='infoInput'></div>
+					<p class='tit'>NUMBER OF TEAMS:</p>
+					<div><input type='number' class='numInput'></div>
+					<p class='tit'>AGE RANGE</p>
+					<div><input type='number' name='youngest' class='numInput'> to <input type='number' name='oldest' class='numInput'></div>
+					<p id='phone' class='tit'>PHONE:</p>
+					<p><input type='tel' name='phone' class='infoInput'></p>
+				</div>
+				<div id='r' class='r'>
+					<p class='tit'>EVENT TYPE:</p>
+					<div><input type='text' name='sport' class='infoInput'></div>
+					<p class='tit'>DATE:</p>
+					<div><input type='date' name='date' id='date'></div>
+					<p class='tit'>NUMBER OF PARTICIPANTS</p>
+					<div><input type='number' class='numInput'></div>
+					<p id='gender' class='tit'>GENDER</p>
+					<div>
+						<input type='checkbox' name='male' value='male'>M</input>
+						<input type='checkbox' name='female' value='female'>F</input>
+						<input type='checkbox' name='both' value='both'>BOTH</input>
+					</div>
+					<p id='email' class='tit'>EMAIL:</p>
+					<p><input type='email' name='email' class='infoInput'></p>
+				</div>
+				<div style='width: 100%; clear: both; text-align: center;'>
+				<input id='book' type='button' value='Book Event'>
+				</div>
+			</div>
+		</form>
+
+	</div>
+</body>
+</html>
